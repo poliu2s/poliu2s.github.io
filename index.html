@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JustUs</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/overlay.css">-->
+
+    <!--JQuery-->
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
+    <!--Video JS-->
+    <link href="//vjs.zencdn.net/4.2/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/4.2/video.js"></script>
+</head>
+<body>
+
+<div class="container" id="container">
+    <div class="header">
+        <div class="double_happy_logo"><img src="img/justin_and_manus.jpg"></div>
+    </div>
+    <div class="top_nav">
+        <ul>
+            <li><a href="index.html">NEW YORK</a></li>
+            <li><a href="#">TAIPEI</a></li>
+            <li><a href="#">BANGKOK</a></li>
+            <li><a href="#">OUR WORDS</a></li>
+            <li><a href="#">ONE YEAR</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="content_blk_opening">
+            <div class="opening_media">
+                <img src="img/morning.jpg" alt="Picture1" rel="#over2">
+                <div class="simple_overlay" id="over2">
+                    <a class="close" id="close1"></a>
+                    <video controls class="video-js vjs-default-skin" id="morning">
+                        <source src="video/oceans.mp4" type="video/mp4">
+                        Morning on the Brooklyn Bridge: Video not supported.
+                    </video>
+                </div>
+
+                <img src="img/laughing.jpg" alt="Picture1" rel="#over1">
+                <div class="simple_overlay" id="over1">
+                    <a class="close"></a>
+                    <img src="img/pic1.jpg" alt="Picture1">
+                </div>
+            </div>
+        </div>
+        <div class="content_blk_city">
+            <div class="content_blk_city_title">
+                <h1>NEW YORK</h1>
+                <p>June 16th, 2012</p>
+            </div>
+            <div class="content_blk_city_text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <div class="content_blk_media">
+            <div class="content_blk_media_title">
+                <h1>MEDIA</h1>
+            </div>
+            <div class="content_blk_media_gallery">
+                <div class="gallery_row1">
+                    <div class="gallery_row1_col1">
+                        <img src="img/media_large.jpg" rel="#over2"/>
+                    </div>
+
+
+                    <div class="gallery_row1_col2">
+                        <div class="gallery_row1_col2_top">
+                            <img src="img/media_small1.jpg" rel="#over1"/>
+                        </div>
+                        <div class="gallery_row1_col2_bot">
+                            <img src="img/media_small2.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery_row2">
+                    <div class="gallery_row2_col1">
+                        <img src="img/media_large.jpg" rel="#over2"/>
+                    </div>
+
+
+                    <div class="gallery_row2_col2">
+                        <div class="gallery_row2_col2_top">
+                            <img src="img/media_small1.jpg" rel="#over1"/>
+                        </div>
+                        <div class="gallery_row2_col2_bot">
+                            <img src="img/media_small2.jpg" rel="#over1"/>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="gallery_row3">
+                    <div class="gallery_row3_col1">
+                        <img src="img/media_large.jpg" rel="#over2"/>
+                    </div>
+
+
+                    <div class="gallery_row3_col2">
+                        <div class="gallery_row3_col2_top">
+                            <img src="img/media_small1.jpg" rel="#over1"/>
+                        </div>
+                        <div class="gallery_row3_col2_bot" id="load_more">
+                            <p id="txt_load"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="extra_rows"></div>
+
+            </div>
+        </div>
+
+        <div class="content_blk_credits">
+            <div class="content_blk_credits_title">
+                <h1>CREDITS</h1>
+            </div>
+            <div class="content_blk_credits_text">
+                <table>
+                    <tr>
+                        <td>
+                            Video One<br>
+                            Cameraman: blah blah<br>
+                            Music: blah blah<br>
+                            Editor: blah blah<br><br>
+
+                            Venue: Hotel<br>
+                            Planner: Blah blah<br>
+                            Dress: Blah Blah<br>
+                            Shoes: Blah blah
+                        </td>
+                        <td>
+                            Video One<br>
+                            Cameraman: blah blah<br>
+                            Music: blah blah<br>
+                            Editor: blah blah<br><br>
+
+                            Venue: Hotel<br>
+                            Planner: Blah blah<br>
+                            Dress: Blah Blah<br>
+                            Shoes: Blah blah
+                        </td>
+                        <td>
+                            Video One<br>
+                            Cameraman: blah blah<br>
+                            Music: blah blah<br>
+                            Editor: blah blah<br><br>
+
+                            Venue: Hotel<br>
+                            Planner: Blah blah<br>
+                            Dress: Blah Blah<br>
+                            Shoes: Blah blah
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+</div>
+<div class="footer">
+    <div class="footer_city_shadow">
+        <img src="img/ny_shadow.jpg">
+    </div>
+    <div class="footer_black_bar">    </div>
+</div>
+
+
+<script>
+
+    // Page Load
+    var txt_load_flag = true;
+    $(document).ready(function() {
+        document.getElementById('txt_load').innerHTML="Load more +";
+
+
+        $("img[rel]").overlay({mask: '#000'});
+    });
+
+
+    // Overlays
+    var overlay = document.getElementById('over2');
+    var video = document.getElementById('morning');
+    var video_close = document.getElementById('close1');
+    overlay.onclick = function() {
+        video.pause();
+    }
+    video_close.onclick = function() {
+        video.pause();
+    }
+
+
+    // Load some new media elements
+
+    var load = document.getElementById('load_more');
+    load.style.cursor = 'pointer';
+    load.onclick = function() {
+        if (txt_load_flag == true) {
+            txt_load_flag = false;
+            document.getElementById('txt_load').innerHTML="Load less -";
+        } else {
+            txt_load_flag = true;
+            document.getElementById('txt_load').innerHTML="Load more +";
+        }
+    }
+</script>
+
+</body>
+</html>
