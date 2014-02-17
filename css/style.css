@@ -144,7 +144,36 @@ body {
       background-color: white;
       width: 600px;
       text-align: left;
-      height: 630px; }
+      min-height: 630px; }
+      .content .content_blk_media .content_blk_media_gallery .simple_overlay {
+        display: none;
+        z-index: 10000;
+        background-color: black;
+        width: 900px;
+        height: 600px;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        -moz-box-shadow: 0 0 90px 5px #000;
+        -webkit-box-shadow: 0 0 90px #000; }
+        .content .content_blk_media .content_blk_media_gallery .simple_overlay img {
+          width: 900px;
+          height: 600px; }
+        .content .content_blk_media .content_blk_media_gallery .simple_overlay video {
+          width: 900px;
+          height: 600px;
+          margin: 0px;
+          padding: 0px;
+          overflow: hidden;
+          float: left; }
+      .content .content_blk_media .content_blk_media_gallery .simple_overlay .close {
+        background-image: url(../img/close.png);
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        cursor: pointer;
+        height: 35px;
+        width: 35px; }
       .content .content_blk_media .content_blk_media_gallery .gallery_row1 {
         height: 210px;
         padding-top: 6px;

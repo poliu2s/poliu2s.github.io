@@ -225,8 +225,50 @@ $opening_media_space: 2px;
       background-color: white;
       width: $content_width;
       text-align: left;
-      height: $row_height * $rows;
+      min-height: $row_height * $rows;
 
+
+      .simple_overlay {
+
+        display: none;
+        z-index: 10000;
+
+        background-color: black;
+
+        width: $opening_pic_width_small*3;
+        height: $opening_pic_height_small*3;
+        border: 1px solid black;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        -moz-box-shadow: 0 0 90px 5px #000;
+        -webkit-box-shadow: 0 0 90px #000;
+
+        img {
+          width: $opening_pic_width_small*3;
+          height: $opening_pic_height_small*3;
+        }
+
+        video {
+          width: $opening_pic_width_small*3;
+          height: $opening_pic_height_small*3;
+          margin: 0px;
+          padding: 0px;
+          overflow: hidden;
+          float: left;
+        }
+      }
+
+      .simple_overlay .close {
+        background-image:url(../img/close.png);
+        position:absolute;
+        right:-15px;
+        top:-15px;
+        cursor:pointer;
+        height:35px;
+        width:35px;
+      }
 
 
       .gallery_row1 {
