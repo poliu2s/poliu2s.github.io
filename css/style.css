@@ -95,7 +95,8 @@ body {
         top: -15px;
         cursor: pointer;
         height: 35px;
-        width: 35px; }
+        width: 35px;
+        z-index: 10001; }
   .content .content_blk_city {
     text-align: right;
     width: 600px;
