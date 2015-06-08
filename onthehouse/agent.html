@@ -18,18 +18,6 @@
 #outlook a{
     padding:0;
 }
-.ReadMsgBody{
-    width:100%;
-}
-.ExternalClass{
-    width:100%;
-    background:#f0efed;
-}
-.yshortcuts,a .yshortcuts,a .yshortcuts:hover,a .yshortcuts:active,a .yshortcuts:focus{
-    background-color:transparent !important;
-    border:none !important;
-    color:inherit !important;
-}
 body{
     margin:0;
     padding:0;
@@ -120,7 +108,7 @@ h4{
     color:#0070ef;
     text-decoration:underline;
 }
-.oth-paragraph {
+.oth-paragraph{
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 14px;
@@ -136,12 +124,6 @@ h4{
   width: 50%;
   vertical-align: top;
 }
-.oth-right-col-property-container{
-  vertical-align: middle;
-  padding-left: 5px;
-  padding-right: 5px;
-
-}
 .oth-body-header{
   width:100%;
   padding-top: 10px;
@@ -149,14 +131,6 @@ h4{
   margin-bottom: 10px;
   border-bottom: 1px solid #CAD1D8;
 
-}
-.oth-property-card-container{
-  padding-bottom: 10px;
-}
-
-.oth-button-padding {
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 td.oth-email-header-outer{
     padding-top:10px;
@@ -192,19 +166,6 @@ td.oth-content-panel-with-padding{
     text-decoration:none;
     width: 80%;
     -webkit-text-size-adjust:none;
-}
-.oth-change-password-outer-td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.oth-view-online-email-td{
-    text-align:center;
-    padding-top:10px;
-    padding-bottom:10px;
-    font-size:12px;
-}
-.oth-link-arrow-img{
-    padding-left:2px;
 }
 #oth-email-summary-panel-inner{
     text-align:center;
@@ -243,9 +204,13 @@ td.oth-content-panel-with-padding{
     padding-left:10px;
     padding-right:10px;
 }
-.oth-inner-content {
+.oth-inner-content{
     font-size: 14px;
     text-align: left;
+}
+.oth-listing-right-col{
+  text-align: center;
+  height: 178px;
 }
 @media only screen and (max-width: 480px){
     h4{
@@ -279,7 +244,6 @@ td.oth-content-panel-with-padding{
 
 }	@media only screen and (max-width: 480px){
     table[class=oth-column-container]{
-        display:block !important;
         width:100% !important;
     }
 
@@ -385,6 +349,7 @@ td.oth-content-panel-with-padding{
                                                       </td>
                                                     </tr>
                                                     <tr>
+                                                      <td>
                                                         <table class="oth-column-container" align="left">
                                                           <tr>
                                                             <td>
@@ -394,58 +359,29 @@ td.oth-content-panel-with-padding{
                                                         </table>
                                                         <table class="oth-column-container" align="right">
                                                           <tr>
-                                                            <td>
-                                                              <div class="oth-property-card-container">
-                                                                <div class="oth-property-card-body">
-                                                                  <p><a href="#" class="oth-link-color">405/200 Maroubra Road,</a><br/>
-                                                                  Maroubra, NSW, 2035
-                                                                  </p>
-                                                                  <p>
-                                                                    <img src="./icons/beds.png"/>&nbsp;10&nbsp;&nbsp;
-                                                                    <img src="./icons/showers.png"/>&nbsp;2&nbsp;&nbsp;
-                                                                    <img src="./icons/cars.png"/>&nbsp;2
-                                                                  </p>
-                                                                </div>
-                                                              </div>
-
+                                                            <td class="oth-listing-right-col">
+                                                              <p>
+                                                                <a href="#" class="oth-link-color">405/200 Maroubra Road,</a><br/>
+                                                                Maroubra, NSW, 2035
+                                                              </p>
+                                                              <p>
+                                                                <img src="./icons/beds.png"/>&nbsp;10&nbsp;&nbsp;
+                                                                <img src="./icons/showers.png"/>&nbsp;2&nbsp;&nbsp;
+                                                                <img src="./icons/cars.png"/>&nbsp;2
+                                                              </p>
                                                               <table class="oth-change-password-table" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
-                                                                  <tr>
-                                                                      <td class="oth-change-password-btn" align="center">
-                                                                          <div>
-                                                                              <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]" class="oth-change-password-link"><b>VIEW LISTING</b></a>
-                                                                          </div>
-                                                                      </td>
-                                                                  </tr>
+                                                                <tr>
+                                                                  <td class="oth-change-password-btn" align="center">
+                                                                      <div>
+                                                                        <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]" class="oth-change-password-link"><b>VIEW LISTING</b></a>
+                                                                      </div>
+                                                                  </td>
+                                                                </tr>
                                                               </table>
                                                             </td>
                                                           </tr>
                                                         </table>
-
-                                                        <!-- <td class="oth-column-container">
-                                                          <img class="oth-img-listing" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg">
-                                                        </td>
-                                                        <td class="oth-column-container" align="center">
-                                                          <div class="oth-property-card-container">
-                                                            <div class="oth-property-card-body">
-                                                              <a href="#" class="oth-link-color">405/200 Maroubra Road,</a><br/>
-                                                              Maroubra, NSW, 2035<br/>
-                                                              <img src="./icons/beds.png"/>10
-                                                              <img src="./icons/showers.png"/>2
-                                                              <img src="./icons/cars.png"/>2
-                                                            </div>
-                                                          </div>
-
-                                                          <table class="oth-change-password-table" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
-                                                              <tr>
-                                                                  <td class="oth-change-password-btn" align="center">
-                                                                      <div>
-                                                                          <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]" class="oth-change-password-link"><b>VIEW LISTING</b></a>
-                                                                      </div>
-                                                                  </td>
-                                                              </tr>
-                                                          </table>
-
-                                                        </td> -->
+                                                      </td>
                                                     </tr>
 
                                                 </table>
