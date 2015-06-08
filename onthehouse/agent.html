@@ -12,7 +12,7 @@
 </xml>
 <![endif]-->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Onthehouse.com.au Reset Password</title>
+<title>Onthehouse.com.au Customer Enquiry</title>
 
 <style type="text/css">
 #outlook a{
@@ -128,19 +128,15 @@ h4{
 .oth-paragraph-table{
   table-layout: fixed;
 }
-.oth-left-col-container {
-  width: 50%;
-}
-.oth-left-col-container img{
+.oth-img-listing{
   display:block;
   width:100%;
 }
-.oth-right-col-container{
+.oth-column-container{
   width: 50%;
   vertical-align: top;
 }
 .oth-right-col-property-container{
-  width:50%;
   vertical-align: middle;
   padding-left: 5px;
   padding-right: 5px;
@@ -157,10 +153,6 @@ h4{
 .oth-property-card-container{
   padding-bottom: 10px;
 }
-.oth-property-card-body{
-
-}
-
 
 .oth-button-padding {
     padding-top: 15px;
@@ -264,11 +256,20 @@ td.oth-content-panel-with-padding{
     table[class=oth-body-container]{
         width:100% !important;
     }
+} @media only screen and (max-width: 480px){
+    table[class=oth-right-col-container]{
+      width:100% !important;
+    }
 
 }	@media only screen and (max-width: 480px){
     td[class=oth-email-header-outer],td[class=oth-content-panel-outer]{
         padding-left:5px !important;
         padding-right:5px !important;
+    }
+
+} @media only screen and (max-width: 480px){
+    .oth-right-col-content p.oth-p-label{
+      margin-top: 0px !important;
     }
 
 }	@media only screen and (max-width: 480px){
@@ -349,8 +350,9 @@ td.oth-content-panel-with-padding{
                                                     </tr>
                                                     <tr>
                                                         <td class="oth-paragraph" colspan="2">
-                                                            <p>[Property Address] - Link to Listing</p>
-                                                            <p>[PropertyId]</p>
+                                                            <p><a href="#" class="oth-link-color">405/200 Marouba Road</a>,<br/>
+                                                            Marouba 2035,<br/>
+                                                            (property ID 104534832)</p>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -359,7 +361,7 @@ td.oth-content-panel-with-padding{
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="oth-left-col-container">
+                                                        <td class="oth-column-container">
                                                             <table>
                                                               <tr>
                                                                 <td class="oth-left-col-content">
@@ -374,15 +376,13 @@ td.oth-content-panel-with-padding{
                                                                 </td>
                                                               </tr>
                                                             </table>
-
-
                                                         </td>
-                                                        <td class="oth-right-col-container">
+                                                        <td class="oth-column-container">
                                                           <table>
                                                             <tr>
                                                               <td class="oth-right-col-content">
                                                                 <p class="oth-p-label">Comments:</p>
-                                                                <p class="oth-p-field">Something something</p>
+                                                                <p class="oth-p-field">Regarding property 10434233, I am interested in viewing this house on a weekend if this is available. <br/><br/> Cheers, <br/>Josh</p>
                                                               </td>
                                                             </tr>
                                                           </table>
@@ -390,15 +390,17 @@ td.oth-content-panel-with-padding{
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="oth-left-col-container">
-                                                          <img src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg">
+                                                        <td class="oth-column-container">
+                                                          <img class="oth-img-listing" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg">
                                                         </td>
-                                                        <td class="oth-right-col-property-container" align="center">
+                                                        <td class="oth-column-container" align="center">
                                                           <div class="oth-property-card-container">
                                                             <div class="oth-property-card-body">
-                                                              40/200 Maroubra Road,<br/>
+                                                              <a href="#" class="oth-link-color">405/200 Maroubra Road,</a><br/>
                                                               Maroubra, NSW, 2035<br/>
-                                                              10 2 2
+                                                              <img src="./icons/beds.png" width="19px" height="13px"/>10
+                                                              <img src="./icons/showers.png"/>2
+                                                              <img src="./icons/cars.png"/>2
                                                             </div>
                                                           </div>
 
@@ -410,7 +412,7 @@ td.oth-content-panel-with-padding{
                                                                               <w:anchorlock/>
                                                                               <center>
                                                                           <![endif]-->
-                                                                          <a href="http://beta.onthehouse.com.au/password_reset?uuid=[UUID]&token=[token]" class="oth-change-password-link">Change Password</a>
+                                                                          <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]" class="oth-change-password-link"><b>VIEW LISTING</b></a>
                                                                           <!--[if mso]>
                                                                           </center>
                                                                           </v:roundrect>
