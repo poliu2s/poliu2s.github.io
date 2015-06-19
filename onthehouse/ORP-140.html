@@ -253,6 +253,10 @@
             padding-left: 30px;
         }
 
+        .oth-logo-mobile {
+            display: none;
+        }
+
         @media only screen and (max-width: 480px) {
             h4 {
                 font-size: 12px !important;
@@ -282,14 +286,8 @@
         }
 
         @media only screen and (max-width: 480px) {
-            .oth-right-col-content p.oth-p-label {
-                margin-top: 0px !important;
-            }
-
-        }
-
-        @media only screen and (max-width: 480px) {
             td[class=oth-email-header-title] {
+                background-color: #354659;
                 width: 100% !important;
                 display: flex !important;
                 align-items: center !important;
@@ -301,8 +299,22 @@
         @media only screen and (max-width: 480px) {
             a[class=oth-email-header-title-img] {
                 width: 100% !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
 
+        }
+
+        @media only screen and (max-width: 480px) {
+            img[class=oth-logo-desktop] {
+                display: none !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            img[class=oth-logo-mobile] {
+                display: inline !important;
+            }
         }
 
         @media only screen and (max-width: 480px) {
@@ -360,8 +372,10 @@
                             <tr>
                                 <td class="oth-email-header-title" width="560" height="79" valign="middle">
                                     <a href="http://beta.onthehouse.com.au/" class="oth-email-header-title-img">
-                                        <img src="http://members.iinet.net.au/~krystlel/marketwatch_assets/onthehouse_on_light_bg@2x.png"
-                                             class="oth-logo" width="200" height="28" alt="onthehouse logo"/>
+                                        <img src="logo-reversed2x.png"
+                                             class="oth-logo-mobile" width="200" height="28" alt="onthehouse logo"/>
+                                        <img src="logo2x.png"
+                                             class="oth-logo-desktop" width="200" height="28" alt="ontheouse logo"/>
                                     </a>
                                 </td>
                                 <td class="oth-email-header-img" cellpadding="25">
