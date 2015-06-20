@@ -247,6 +247,10 @@
             font-weight: bold;
         }
 
+        .oth-agent-card-mobile {
+            display: none;
+        }
+
         .oth-content-panel-center {
             text-align: center;
             padding-right: 30px;
@@ -388,6 +392,18 @@
                 width: 50% !important;
             }
         }
+
+        @media only screen and (max-width: 480px) {
+            table[class=oth-agent-card-table] {
+                display: none !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            p[class=oth-agent-card-mobile] {
+                display: inline !important;
+            }
+        }
     </style>
 </head>
 
@@ -500,6 +516,11 @@
                                 </td>
                             </tr>
                         </table>
+                        <p class="oth-agent-card-mobile">
+                            Sincerely, <br/><br/>
+                            Jacquelin Patterson,
+                            Ray White - Marouba / South Coogee<br/><br/>
+                        </p>
                     </td>
                 </tr>
                 <tr>
