@@ -21,6 +21,14 @@
             padding: 0;
         }
 
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 14px;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -108,14 +116,19 @@
         td.oth-content-panel {
             padding-right: 30px;
             padding-left: 30px;
+            padding-top: 14px;
+            padding-bottom: 14px;
         }
 
         td.oth-content-panel-outer {
             padding-bottom: 10px;
         }
 
-        table.oth-content-panel-inner, table.oth-email-header-inner {
+        .oth-email-header-inner {
             background: #f3f3f3;
+            border-top: 1px solid #e3e2e0;
+            border-right: 1px solid #e3e2e0;
+            border-left: 1px solid #e3e2e0;
         }
 
         table.oth-content-panel-inner {
@@ -215,7 +228,10 @@
         }
 
         .oth-listing-table {
-            box-shadow: 0px 5px 0px #dcddde;
+            border-bottom: 3px solid #e3e2e0;
+            border-top: 1px solid #e3e2e0;
+            border-right: 1px solid #e3e2e0;
+            border-left: 1px solid #e3e2e0;
             background-color: #ffffff;
             padding-bottom: 0px;
         }
@@ -229,7 +245,10 @@
         }
 
         .oth-agent-card-table {
-            box-shadow: 0px 5px 0px #dcddde;
+            border-bottom: 3px solid #e3e2e0;
+            border-top: 1px solid #e3e2e0;
+            border-right: 1px solid #e3e2e0;
+            border-left: 1px solid #e3e2e0;
             background-color: #ffffff;
         }
 
@@ -245,6 +264,7 @@
             vertical-align: top;
             font-style: italic;
             font-weight: bold;
+            padding-top: 5px;
         }
 
         .oth-agent-card-mobile {
@@ -255,10 +275,40 @@
             text-align: center;
             padding-right: 30px;
             padding-left: 30px;
+
         }
 
         .oth-logo-mobile {
             display: none;
+
+        }
+
+        .oth-mobile-element {
+            overflow: hidden;
+            float: left;
+            line-height: 0px;
+            mso-hide: all;
+            max-height: 0px;
+        }
+
+
+        @media only screen and (max-width: 480px) {
+            span[oth-mobile-element] {
+                overflow: visible !important;
+                float: none !important;
+                display: block !important;
+                line-height:100% !important;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            span[oth-desktop-element] {
+                overflow: hidden;
+                float: left;
+                line-height: 0px;
+                mso-hide: all;
+                max-height: 0px;
+            }
         }
 
         @media only screen and (max-width: 480px) {
@@ -420,10 +470,15 @@
                             <tr>
                                 <td class="oth-email-header-title" width="560" height="79" valign="middle">
                                     <a href="http://beta.onthehouse.com.au/" class="oth-email-header-title-img">
-                                        <img src="http://poliu2s.github.io/onthehouse/logo-reversed2x.png"
-                                             class="oth-logo-mobile" width="200" height="28" alt="onthehouse logo"/>
-                                        <img src="http://poliu2s.github.io/onthehouse/logo2x.png"
-                                             class="oth-logo-desktop" width="200" height="28" alt="ontheouse logo"/>
+                                        <span class="oth-mobile-element">
+                                            <img src="http://poliu2s.github.io/onthehouse/logo-reversed2x.png"
+                                             class="oth-logo-mobile" width="200" height="36" alt="onthehouse logo"/>
+                                        </span>
+                                        <span class="oth-desktop-element">
+                                            <img src="http://poliu2s.github.io/onthehouse/logo2x.png"
+                                                 class="oth-logo-desktop" width="200" height="36" alt="ontheouse logo"/>
+                                        </span>
+
                                     </a>
                                 </td>
                                 <td class="oth-email-header-img" cellpadding="25">
@@ -450,7 +505,7 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="248" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img" width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -473,11 +528,7 @@
                                                     <tr>
                                                         <td class="oth-change-password-btn"
                                                             align="center">
-                                                            <div>
-                                                                <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]"
-                                                                   class="oth-change-password-link"><b>VIEW
-                                                                    LISTING</b></a>
-                                                            </div>
+                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing.png">
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -533,7 +584,7 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="248" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img"  width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -556,11 +607,7 @@
                                                     <tr>
                                                         <td class="oth-change-password-btn"
                                                             align="center">
-                                                            <div>
-                                                                <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]"
-                                                                   class="oth-change-password-link"><b>VIEW
-                                                                    LISTING</b></a>
-                                                            </div>
+                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing.png">
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -577,7 +624,7 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="248" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img" width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -600,11 +647,7 @@
                                                     <tr>
                                                         <td class="oth-change-password-btn"
                                                             align="center">
-                                                            <div>
-                                                                <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]"
-                                                                   class="oth-change-password-link"><b>VIEW
-                                                                    LISTING</b></a>
-                                                            </div>
+                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing.png">
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -621,7 +664,7 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="248" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img" width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -644,11 +687,7 @@
                                                     <tr>
                                                         <td class="oth-change-password-btn"
                                                             align="center">
-                                                            <div>
-                                                                <a href="http://beta.onthehouse.com.au/viewListingId=[listingId]"
-                                                                   class="oth-change-password-link"><b>VIEW
-                                                                    LISTING</b></a>
-                                                            </div>
+                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing.png">
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -662,6 +701,7 @@
                 </tr>
                 <tr>
                     <td class="oth-content-panel-center">
+                        <br/>
                         <p>
                             Don't like this email? You can manage the type of alerts that you want to receive from us.<br/>
                             <a href="#">Go to your Alert & Notification settings.</a>
