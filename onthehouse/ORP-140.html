@@ -283,39 +283,41 @@
 
         }
 
-        .oth-mobile-element {
+        .oth-email-header-title-img-logo-mobile {
+            display: none;
             overflow: hidden;
             float: left;
             line-height: 0px;
-            mso-hide: all;
             max-height: 0px;
-        }
-
-
-        @media only screen and (max-width: 480px) {
-            span[oth-mobile-element] {
-                overflow: visible !important;
-                float: none !important;
-                display: block !important;
-                line-height:100% !important;
-            }
-        }
-
-        @media only screen and (max-width: 480px) {
-            span[oth-desktop-element] {
-                overflow: hidden;
-                float: left;
-                line-height: 0px;
-                mso-hide: all;
-                max-height: 0px;
-            }
+            width: 100%;
         }
 
         @media only screen and (max-width: 480px) {
             h4 {
                 font-size: 12px !important;
             }
+        }
 
+        @media only screen and (max-width: 480px) {
+            a[class=oth-email-header-title-img-logo-mobile] {
+                display: block !important;
+                overflow: visible !important;
+                line-height: 100% !important;
+                max-height: 100% !important;
+                width: 100% !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            a[class=oth-email-header-title-img-logo-desktop] {
+                overflow: hidden !important;
+                float: left !important;
+                line-height: 0px !important;
+                mso-hide: all !important;
+                max-height: 0px !important;
+            }
         }
 
         @media only screen and (max-width: 480px) {
@@ -350,6 +352,7 @@
                 text-align: center;
             }
         }
+
         @media only screen and (max-width: 480px) {
             a[class=oth-email-header-title-img] {
                 width: 100% !important;
@@ -394,6 +397,8 @@
         @media only screen and (max-width: 480px) {
             td[class=oth-listing-right-col] {
                 width: 100% !important;
+                padding-top: 10px !important;
+                padding-bottom: 10px !important;
             }
         }
 
@@ -469,17 +474,20 @@
                         <table class="oth-email-header-inner" cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td class="oth-email-header-title" width="560" height="79" valign="middle">
-                                    <a href="http://beta.onthehouse.com.au/" class="oth-email-header-title-img">
-                                        <span class="oth-mobile-element">
-                                            <img src="http://poliu2s.github.io/onthehouse/logo-reversed2x.png"
-                                             class="oth-logo-mobile" width="200" height="36" alt="onthehouse logo"/>
-                                        </span>
-                                        <span class="oth-desktop-element">
-                                            <img src="http://poliu2s.github.io/onthehouse/logo2x.png"
-                                                 class="oth-logo-desktop" width="200" height="36" alt="ontheouse logo"/>
-                                        </span>
 
+                                            <a href="http://beta.onthehouse.com.au/" class="oth-email-header-title-img-logo-mobile">
+                                                <img src="http://poliu2s.github.io/onthehouse/logo-reversed2x.png"
+                                                     class="oth-logo-mobile" width="200" height="36"
+                                                     alt="onthehouse logo"/>
+                                            </a>
+                                    <!--<span class="oth-desktop-element">-->
+                                    <a href="http://beta.onthehouse.com.au/" class="oth-email-header-title-img-logo-desktop">
+                                    <img src="http://poliu2s.github.io/onthehouse/logo2x.png"
+                                    class="oth-logo-desktop" width="200" height="36" alt="ontheouse logo"/>
                                     </a>
+
+                                    <!--</span>-->
+
                                 </td>
                                 <td class="oth-email-header-img" cellpadding="25">
                                     <a href="" class="oth-email-header-title-img">
@@ -505,7 +513,8 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img" width="249" height="187"
+                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -514,7 +523,7 @@
                                                 <p>
                                                     <a href="#" class="oth-link-color">405/200
                                                         Maroubra Road,</a><br/>
-                                                        Maroubra, NSW, 2035
+                                                    Maroubra, NSW, 2035
                                                 </p>
 
                                                 <p>
@@ -542,8 +551,10 @@
                 </tr>
                 <tr>
                     <td class="oth-content-panel">
-                        <p>Your information and comments are on their way to <b>Ray White - Maroubra / South Coogee</b>. If you do
-                            not receive a response within 48 hours, please contact Ray White - Maroubra / South Coogee directly.</p>
+                        <p>Your information and comments are on their way to <b>Ray White - Maroubra / South Coogee</b>.
+                            If you do
+                            not receive a response within 48 hours, please contact Ray White - Maroubra / South Coogee
+                            directly.</p>
                     </td>
                 </tr>
                 <tr>
@@ -558,6 +569,7 @@
                                         Jacquelin Patterson<br/>
                                         <a href="#">Ray White - Marouba / South Coogee</a>
                                     </p>
+
                                     <p>
                                         0422 065 223
                                     </p>
@@ -584,7 +596,8 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img"  width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img" width="249" height="187"
+                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -624,7 +637,8 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img" width="249" height="187"
+                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -664,7 +678,8 @@
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="249" height="187" src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
+                                    <img class="oth-listing-img" width="249" height="187"
+                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
                                 </td>
                                 <td class="oth-listing-info-container">
                                     <table class="oth-listing-info">
@@ -702,8 +717,10 @@
                 <tr>
                     <td class="oth-content-panel-center">
                         <br/>
+
                         <p>
-                            Don't like this email? You can manage the type of alerts that you want to receive from us.<br/>
+                            Don't like this email? You can manage the type of alerts that you want to receive from
+                            us.<br/>
                             <a href="#">Go to your Alert & Notification settings.</a>
                         </p>
                     </td>
