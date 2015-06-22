@@ -174,33 +174,9 @@
             -webkit-text-size-adjust: none;
         }
 
-        #oth-email-summary-panel-inner {
-            text-align: center;
-        }
-
-        .oth-email-header-logo-td {
-            padding-top: 50px;
-            padding-bottom: 10px;
-        }
-
-        td.oth-email-header-title {
-            width: 560px;
-            height: 80px;
-            background: #FFFFFF;
-            border-bottom: 3px solid #e3e2e0;
-            padding-left: 20px;
-            text-align: left;
-            vertical-align: middle;
-        }
-
         .oth-email-header-img {
             background: #FFFFFF;
             border-bottom: 3px solid #e3e2e0;
-        }
-
-        .oth-email-header-btyb-td {
-            text-align: center;
-            padding-top: 5px;
         }
 
         .oth-email-footer-facebook-logo-td {
@@ -292,34 +268,55 @@
 
         }
 
-        .oth-logo-mobile {
-            display: none;
-            overflow: hidden;
-            line-height: 0px;
-            max-height: none;
-            width: 0;
+        .oth-email-header-title-img-logo {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .oth-email-header {
+
 
         }
 
-        .oth-email-header-title-img-logo-mobile {
-            display: none;
-            overflow: hidden;
-            float: left;
-            line-height: 0px;
-            max-height: none;
-            width: 0;
-            mso-hide: all;
+        .oth-email-header-inner {
+            display: inline-table !important;
+            overflow: visible !important;
+            line-height: 100% !important;
+            max-height: 100% !important;
+            width: 100% !important;
+            table-layout: fixed !important;
         }
 
-        .oth-email-header-mobile {
-            display: none;
-            overflow: hidden;
-            float: left;
-            line-height: 0px;
-            max-height: none;
+        .oth-email-header-title-img {
+            width: 100% !important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .oth-email-header-title {
+            background-color: #354659;
             width: 100%;
-            mso-hide: all;
+            display: block;
+            align-items: center;
+            border-bottom: 0;
+            padding: 25px 0 0px 0;
+            text-align: center;
+        }
 
+        .oth-logo {
+            display: inline !important;
+            overflow: visible !important;
+            line-height: 100% !important;
+            max-height: 100% !important;
+            width: 200px !important;
+        }
+
+        .oth-email-header-img {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         .oth-listing-address {
@@ -361,39 +358,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            table[class=oth-email-header-inner-mobile] {
-                display: inline-table !important;
-                overflow: visible !important;
-                line-height: 100% !important;
-                max-height: 100% !important;
-                width: 100% !important;
-                table-layout: fixed !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
-            a[class=oth-email-header-title-img-logo-mobile] {
-                display: block !important;
-                overflow: visible !important;
-                line-height: 100% !important;
-                max-height: 100% !important;
-                width: 100% !important;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
-            a[class=oth-email-header-title-img-logo-desktop] {
-                overflow: hidden !important;
-                float: left !important;
-                line-height: 0px !important;
-                mso-hide: all !important;
-                max-height: 0px !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
             table[class=oth-body-container] {
                 width: 100% !important;
             }
@@ -415,26 +379,7 @@
 
         }
 
-        @media only screen and (max-device-width: 480px) {
-            td[class=oth-email-header-title-mobile] {
-                background-color: #354659;
-                width: 100% !important;
-                display: block !important;
-                align-items: center !important;
-                border-bottom: 0px !important;
-                padding: 10px 0 0px 0 !important;
-                text-align: center !important;
-            }
-        }
 
-        @media only screen and (max-device-width: 480px) {
-            a[class=oth-email-header-title-img] {
-                width: 100% !important;
-                padding-top: 10px !important;
-                padding-bottom: 10px !important;
-            }
-
-        }
 
         @media only screen and (max-device-width: 480px) {
             img[class=oth-logo-desktop] {
@@ -476,25 +421,9 @@
             }
         }
 
-        @media only screen and (max-device-width: 480px) {
-            img[class=oth-logo-mobile] {
-                display: inline !important;
-                overflow: visible !important;
-                line-height: 100% !important;
-                max-height: 100% !important;
-                width: 200px !important;
-            }
-        }
 
-        @media only screen and (max-device-width: 480px) {
-            td[class=oth-email-header-img] {
-                width: 100% !important;
-                display: block !important;
-                text-align: center !important;
-                padding-top: 10px !important;
-                padding-bottom: 10px !important;
-            }
-        }
+
+
 
         @media only screen and (max-device-width: 480px) {
             table[class=oth-column-container] {
@@ -546,41 +475,16 @@
 <table align="center" cellpadding="0" cellspacing="0" width="560" class="oth-body-container">
     <tr>
         <td>
-            <!-- START ENTIRE EMAIL CONTENT -->
-            <!-- BEGIN HEADER // -->
-            <table class="oth-email-header-desktop" cellpadding="30" cellspacing="0" border="0" width="100%">
+            <table class="oth-email-header" cellpadding="30" cellspacing="0" border="0" width="100%">
                 <tr>
                     <td class="oth-email-header-outer">
                         <table class="oth-email-header-inner" cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
-                                <td class="oth-email-header-title" width="560" height="79" valign="middle">
+                                <td bgcolor="#354659" class="oth-email-header-title" width="560" height="79" valign="middle">
                                     <a href="http://beta.onthehouse.com.au/"
-                                       class="oth-email-header-title-img-logo-desktop">
-                                        <img src="http://poliu2s.github.io/onthehouse/logo2x.png"
-                                             class="oth-logo-desktop" width="200" height="36" alt="ontheouse logo"/>
-                                    </a>
-                                </td>
-                                <td class="oth-email-header-img" cellpadding="25">
-                                    <a href="" class="oth-email-header-title-img">
-                                        <img width="200" src="http://poliu2s.github.io/onthehouse/westpac.png"/>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="oth-email-header-mobile" cellpadding="30" cellspacing="0" border="0" width="100%">
-                <tr>
-                    <td class="oth-email-header-outer">
-                        <table class="oth-email-header-inner-mobile" cellpadding="0" cellspacing="0" border="0" width="100%">
-                            <tr>
-                                <td bgcolor="#354659" class="oth-email-header-title-mobile" width="560" height="79" valign="middle">
-                                    <a href="http://beta.onthehouse.com.au/"
-                                       class="oth-email-header-title-img-logo-mobile">
+                                       class="oth-email-header-title-img-logo">
                                         <img src="http://poliu2s.github.io/onthehouse/logo-reversed2x.png"
-                                             class="oth-logo-mobile" width="200" height="36"
+                                             class="oth-logo" width="200" height="36"
                                              alt="onthehouse logo"/>
                                     </a>
                                 </td>
@@ -594,7 +498,6 @@
                     </td>
                 </tr>
             </table>
-            <!-- // END HEADER -->
 
             <table class="oth-panel" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
@@ -684,129 +587,6 @@
                 <tr>
                     <td class="oth-content-panel">
                         <p>Here are some similar things that you may be interested in:</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="oth-listing">
-                        <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
-                            <tr>
-                                <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="249" height="187"
-                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
-                                </td>
-                                <td class="oth-listing-info-container">
-                                    <table class="oth-listing-info">
-                                        <tr>
-                                            <td width="50%" class="oth-listing-right-col">
-                                                <p class="oth-listing-address">
-                                                    <a href="#" class="oth-link-color">405/200
-                                                        Maroubra Road,</a><br/>
-                                                    Maroubra, NSW, 2035
-                                                </p>
-
-                                                <p class="oth-listing-dimensions">
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/beds.png"/>&nbsp;10&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/showers.png"/>&nbsp;2&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/cars.png"/>&nbsp;2
-                                                </p>
-                                                <table class="oth-change-password-table"
-                                                       cellpadding="0" cellspacing="0"
-                                                       border="0" width="100%" align="center">
-                                                    <tr>
-                                                        <td class="oth-change-password-btn"
-                                                            align="center">
-                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing2.png">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="oth-listing">
-                        <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
-                            <tr>
-                                <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="249" height="187"
-                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
-                                </td>
-                                <td class="oth-listing-info-container">
-                                    <table class="oth-listing-info">
-                                        <tr>
-                                            <td width="50%" class="oth-listing-right-col">
-                                                <p class="oth-listing-address">
-                                                    <a href="#" class="oth-link-color">405/200
-                                                        Maroubra Road,</a><br/>
-                                                    Maroubra, NSW, 2035
-                                                </p>
-
-                                                <p class="oth-listing-dimensions">
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/beds.png"/>&nbsp;10&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/showers.png"/>&nbsp;2&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/cars.png"/>&nbsp;2
-                                                </p>
-                                                <table class="oth-change-password-table"
-                                                       cellpadding="0" cellspacing="0"
-                                                       border="0" width="100%" align="center">
-                                                    <tr>
-                                                        <td class="oth-change-password-btn"
-                                                            align="center">
-                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing2.png">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="oth-listing">
-                        <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
-                            <tr>
-                                <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="249" height="187"
-                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
-                                </td>
-                                <td class="oth-listing-info-container">
-                                    <table class="oth-listing-info">
-                                        <tr>
-                                            <td width="50%" class="oth-listing-right-col">
-                                                <p class="oth-listing-address">
-                                                    <a href="#" class="oth-link-color">405/200
-                                                        Maroubra Road,</a><br/>
-                                                    Maroubra, NSW, 2035
-                                                </p>
-
-                                                <p class="oth-listing-dimensions">
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/beds.png"/>&nbsp;10&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/showers.png"/>&nbsp;2&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/cars.png"/>&nbsp;2
-                                                </p>
-                                                <table class="oth-change-password-table"
-                                                       cellpadding="0" cellspacing="0"
-                                                       border="0" width="100%" align="center">
-                                                    <tr>
-                                                        <td class="oth-change-password-btn"
-                                                            align="center">
-                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing2.png">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
                     </td>
                 </tr>
                 <tr>
