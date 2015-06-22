@@ -155,16 +155,34 @@
 
         }
 
+        .oth-email-header-desktop {
+            background-color: #f3f3f3;
+            border-left: 1px solid #e3e2e0;
+            border-right: 1px solid #e3e2e0;
+            border-top: 1px solid #e3e2e0;
+        }
+
         td.oth-email-header-outer {
             padding-top: 10px;
+            padding-bottom: 0px;
         }
 
         td.oth-content-panel-outer {
             padding-bottom: 10px;
         }
 
-        table.oth-content-panel-inner, table.oth-email-header-inner {
+        table.oth-content-panel-inner {
             background: #f3f3f3;
+            border-top: 0;
+            border-right: 1px solid #e3e2e0;
+            border-left: 1px solid #e3e2e0;
+        }
+
+        table.oth-email-header-inner {
+            background: #f3f3f3;
+            border-bottom: 2px solid #e3e2e0;
+
+            text-align: center;
         }
 
         table.oth-content-panel-inner {
@@ -213,7 +231,7 @@
         .oth-email-header-title {
             width: 560px;
             height: 80px;
-            background: #364558;
+            background: #ffffff;
         }
 
         .oth-email-header-btyb-td {
@@ -291,6 +309,7 @@
             td[class=oth-email-header-outer], td[class=oth-content-panel-outer] {
                 padding-left: 5px !important;
                 padding-right: 5px !important;
+                width: 100% !important;
             }
         }
 
@@ -347,16 +366,16 @@
         <td>
             <!-- START ENTIRE EMAIL CONTENT -->
             <!-- BEGIN HEADER // -->
-            <table id="oth-email-header" cellpadding="0" cellspacing="0" border="0" width="100%">
+            <table class="oth-email-header-desktop" cellpadding="30" cellspacing="0" border="0" width="100%">
                 <tr>
                     <td class="oth-email-header-outer">
                         <table class="oth-email-header-inner" cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
-                                <td class="oth-email-header-title" width="560" height="80" valign="middle"
-                                    align="center">
-                                    <a href="http://beta.onthehouse.com.au/">
-                                        <img src="http://poliu2s.github.com/onthehouse/logo-reversed2x.png"
-                                             class="oth-logo" width="200" height="36" alt="onthehouse logo"/>
+                                <td class="oth-email-header-title" width="560" height="79" valign="middle">
+                                    <a href="http://beta.onthehouse.com.au/"
+                                       class="oth-email-header-title-img-logo-desktop">
+                                        <img src="http://poliu2s.github.io/onthehouse/logo2x.png"
+                                             class="oth-logo-desktop" width="200" height="36" alt="ontheouse logo"/>
                                     </a>
                                 </td>
                             </tr>
