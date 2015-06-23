@@ -43,15 +43,6 @@
             text-decoration: none;
         }
 
-        .circular {
-            width: 70px;
-            height: 70px;
-            border-radius: 45px;
-            -webkit-border-radius: 45px;
-            -moz-border-radius: 45px;
-            border: 0px solid #d5d5d5;
-        }
-
         a {
             text-decoration: none;
         }
@@ -64,9 +55,12 @@
         }
 
         body, .oth-body-container {
-            background: #f0efed;
             font-family: Arial, Helvetica, sans-serif;
             color: #364558;
+        }
+
+        .oth-body-container-content {
+            background: #f0efed;
         }
 
         h1 {
@@ -240,6 +234,7 @@
         .oth-panel {
             font-size: 14px;
             text-align: left;
+            border-bottom: 3px solid #e3e2e0;
         }
 
         .oth-listing-right-col {
@@ -276,7 +271,12 @@
         }
 
         .oth-agent-card-left-col {
+            border: 0;
+            padding: 0 0 0 0;
+        }
 
+        .oth-agent-card-img {
+            height: 90px;
         }
 
         .oth-agent-card-middle-col {
@@ -287,7 +287,6 @@
             vertical-align: top;
             font-style: italic;
             font-weight: bold;
-            padding-top: 5px;
         }
 
         .oth-agent-card-mobile {
@@ -307,27 +306,6 @@
             line-height: 0px;
             max-height: none;
             width: 0;
-
-        }
-
-        .oth-email-header-title-img-logo-mobile {
-            display: none;
-            overflow: hidden;
-            float: left;
-            line-height: 0px;
-            max-height: none;
-            width: 0;
-            mso-hide: all;
-        }
-
-        .oth-email-header-mobile {
-            display: none;
-            overflow: hidden;
-            float: left;
-            line-height: 0px;
-            max-height: none;
-            width: 100%;
-            mso-hide: all;
 
         }
 
@@ -364,30 +342,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            table[class=oth-email-header-mobile] {
-                display: inline-table !important;
-                overflow: visible !important;
-                line-height: 100% !important;
-                max-height: 100% !important;
-                width: 100% !important;
-                padding-top: 10px !important;
-                padding-bottom: 10px !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
-            table[class=oth-email-header-desktop] {
-                display: none !important;
-                overflow: hidden !important;
-                float: left !important;
-                line-height: 0px !important;
-                max-height: 0px !important;
-                width: 100% !important;
-                mso-hide: all !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
             table[class=oth-email-header-inner-mobile] {
                 display: inline-table !important;
                 overflow: visible !important;
@@ -411,16 +365,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            a[class=oth-email-header-title-img-logo-desktop] {
-                overflow: hidden !important;
-                float: left !important;
-                line-height: 0px !important;
-                mso-hide: all !important;
-                max-height: 0px !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
             table[class=oth-body-container] {
                 width: 100% !important;
             }
@@ -430,7 +374,6 @@
             table[class=oth-right-col-container] {
                 width: 100% !important;
             }
-
         }
 
         @media only screen and (max-device-width: 480px) {
@@ -443,29 +386,19 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            td[class=oth-email-header-title-mobile] {
-                background-color: #354659;
+            td[class=oth-email-header-title] {
                 width: 100% !important;
-                display: block !important;
                 align-items: center !important;
                 border-bottom: 0px !important;
-                padding: 10px 0 0px 0 !important;
                 text-align: center !important;
+                padding: 0 0 0 0 !important;
             }
         }
 
         @media only screen and (max-device-width: 480px) {
             a[class=oth-email-header-title-img] {
                 width: 100% !important;
-                padding-top: 10px !important;
-                padding-bottom: 10px !important;
-            }
-
-        }
-
-        @media only screen and (max-device-width: 480px) {
-            img[class=oth-logo-desktop] {
-                display: none !important;
+                text-align: center !important;
             }
         }
 
@@ -524,6 +457,14 @@
         }
 
         @media only screen and (max-device-width: 480px) {
+            td[class=oth-email-header-img] {
+                display: none !important;
+                width: 0 !important;
+                max-height: 0 ! important;
+            }
+        }
+
+        @media only screen and (max-device-width: 480px) {
             table[class=oth-column-container] {
                 width: 100% !important;
             }
@@ -578,43 +519,19 @@
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 <table align="center" cellpadding="0" cellspacing="0" width="560" class="oth-body-container">
     <tr>
-        <td>
+        <td class="oth-body-container-content" bgcolor="#f0efed">
             <!-- START ENTIRE EMAIL CONTENT -->
             <!-- BEGIN HEADER // -->
-            <table class="oth-email-header-desktop" cellpadding="30" cellspacing="0" border="0" width="100%">
+            <table class="oth-email-header" cellpadding="30" cellspacing="0" border="0" width="100%">
                 <tr>
                     <td class="oth-email-header-outer">
                         <table class="oth-email-header-inner" cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td class="oth-email-header-title" width="560" height="79" valign="middle">
                                     <a href="http://beta.onthehouse.com.au/"
-                                       class="oth-email-header-title-img-logo-desktop">
+                                       class="oth-email-header-title-img-logo">
                                         <img src="http://poliu2s.github.io/onthehouse/logo2x.png"
                                              class="oth-logo-desktop" width="200" height="36" alt="ontheouse logo"/>
-                                    </a>
-                                </td>
-                                <td class="oth-email-header-img" cellpadding="25">
-                                    <a href="" class="oth-email-header-title-img">
-                                        <img width="200" src="http://poliu2s.github.io/onthehouse/westpac.png"/>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="oth-email-header-mobile" cellpadding="30" cellspacing="0" border="0" width="100%">
-                <tr>
-                    <td class="oth-email-header-outer">
-                        <table class="oth-email-header-inner-mobile" cellpadding="0" cellspacing="0" border="0" width="100%">
-                            <tr>
-                                <td bgcolor="#354659" class="oth-email-header-title-mobile" width="560" height="79" valign="middle">
-                                    <a href="http://beta.onthehouse.com.au/"
-                                       class="oth-email-header-title-img-logo-mobile">
-                                        <img src="http://poliu2s.github.io/onthehouse/logo-reversed2x.png"
-                                             class="oth-logo-mobile" width="200" height="36"
-                                             alt="onthehouse logo"/>
                                     </a>
                                 </td>
                                 <td class="oth-email-header-img" cellpadding="25">
@@ -701,8 +618,7 @@
                         <table class="oth-agent-card-table" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td class="oth-agent-card-left-col">
-                                    <div class="circular" style="background: url(http://poliu2s.github.io/onthehouse/img/agent_pic.jpg)">
-                                    </div>
+                                    <img class="oth-agent-card-img" src="http://poliu2s.github.io/onthehouse/img/agent_pic.jpg"/>
                                 </td>
                                 <td class="oth-agent-card-middle-col">
                                     <p>
@@ -895,6 +811,7 @@
                             Don't like this email? You can manage the type of alerts that you want to receive from
                             us.<br/>
                             <a href="#">Go to your Alert & Notification settings.</a>
+                            <br/><br/>
                         </p>
                     </td>
                 </tr>
@@ -913,8 +830,8 @@
                     <td class="oth-email-footer-logo-td">
                         <!-- onthehouse logo -->
                         <a href="http://beta.onthehouse.com.au/"><img
-                                src="http://members.iinet.net.au/~krystlel/marketwatch_assets/onthehouse_on_light_bg@2x.png"
-                                class="oth-logo" width="163" height="23" alt="onthehouse logo"></a>
+                                src="http://poliu2s.github.io/onthehouse/logo2x.png"
+                                class="oth-logo" width="163" height="29" alt="onthehouse logo"></a>
                     </td>
                     <td class="oth-email-footer-facebook-logo-td">
                         <!-- Facebook logo -->
