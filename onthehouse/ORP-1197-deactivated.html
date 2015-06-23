@@ -196,7 +196,7 @@
             padding-right: 10px;
         }
 
-        .oth-email-footer-privacy-policy, .oth-email-footer-email-preferences, .oth-email-footer-copyright {
+        .oth-email-footer-privacy-policy, .oth-email-footer-email-preferences, .oth-email-footer-copyright, .oth-email-footer-preferences {
             font-size: 11px;
             padding-bottom: 15px;
             color: #8c96a1;
@@ -226,39 +226,26 @@
             padding-bottom: 0px;
         }
 
+        .oth-view-listing-link {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #29c0e2;
+            border-radius: 5px;
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 40px;
+            text-align: center;
+            border-top: 10px;
+            border-bottom: 10px;
+            text-decoration: none;
+            width: 80%;
+            -webkit-text-size-adjust: none;
+        }
+
         .oth-listing-img-container {
             padding: 0px 0px 0px 0px;
-        }
-
-        .oth-agent-card {
-            padding: 5px 30px 5px 30px;
-        }
-
-        .oth-agent-card-table {
-            border-bottom: 3px solid #e3e2e0;
-            border-top: 1px solid #e3e2e0;
-            border-right: 1px solid #e3e2e0;
-            border-left: 1px solid #e3e2e0;
-            background-color: #ffffff;
-        }
-
-        .oth-agent-card-left-col {
-
-        }
-
-        .oth-agent-card-middle-col {
-
-        }
-
-        .oth-agent-card-right-col {
-            vertical-align: top;
-            font-style: italic;
-            font-weight: bold;
-            padding-top: 5px;
-        }
-
-        .oth-agent-card-mobile {
-            display: none;
         }
 
         .oth-content-panel-center {
@@ -421,10 +408,6 @@
             }
         }
 
-
-
-
-
         @media only screen and (max-device-width: 480px) {
             table[class=oth-column-container] {
                 width: 100% !important;
@@ -439,13 +422,6 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            td[class=oth-email-footer-email-preferences] {
-                padding-left: 20px !important;
-                padding-right: 20px !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
             img[class=oth-img-listing] {
                 width: 100% !important;
             }
@@ -454,18 +430,6 @@
         @media only screen and (max-device-width: 480px) {
             a[class=oth-change-password-link] {
                 width: 50% !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
-            table[class=oth-agent-card-table] {
-                display: none !important;
-            }
-        }
-
-        @media only screen and (max-device-width: 480px) {
-            p[class=oth-agent-card-mobile] {
-                display: inline !important;
             }
         }
     </style>
@@ -500,106 +464,37 @@
                     </td>
                 </tr>
             </table>
+            <br/>
 
             <table class="oth-panel" cellpadding="0" cellspacing="0" border="0" width="100%">
-                <tr>
-                    <td class="oth-content-panel">
-                        <p>Thank you for submitting an enquiry regarding <a href="#">19 Mermaid Avenue, Maroubra, NSW
-                            2035</a>.</p>
-                    </td>
-                </tr>
                 <tr>
                     <td class="oth-listing">
                         <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
                             <tr>
-                                <td width="50%" class="oth-listing-img-container">
-                                    <img class="oth-listing-img" width="249" height="187"
-                                         src="https://img.othsolutions.com.au/resize/upload/c5fcc1f36bffcf7e94a8db4d3f642732/5ee7e21f75ba288034192520a8a872a6.jpg"/>
-                                </td>
-                                <td class="oth-listing-info-container">
-                                    <table class="oth-listing-info">
-                                        <tr>
-                                            <td width="50%" class="oth-listing-right-col">
-                                                <p class="oth-listing-address">
-                                                    <a href="#" class="oth-link-color">405/200
-                                                        Maroubra Road,</a><br/>
-                                                    Maroubra, NSW, 2035
-                                                </p>
+                                <td>
+                                    <h1>Hello {{consumer.firstName}}</h1>
+                                    <p>You have successfully de-activated your account.</p>
+                                    <p>You can login and re-ativate your account at any time. Your username is still {{consumer.username}}.</p>
+                                    <p>
+                                        <div><!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://beta.onthehouse.com.au/password_reset?uuid=[UUID]&token=[token]" style="height:50px;v-text-anchor:middle;width:170px;font-size:14px;" arcsize="14%" stroke="f" fillcolor="#29c0e2">
+                                            <w:anchorlock/>
+                                            <center>
+                                        <![endif]-->
+                                        <a href="http://beta.onthehouse.com.au/password_reset?uuid=[UUID]&token=[token]" class="oth-view-listing-link">VIEW LISTING</a>
+                                        <!--[if mso]>
+                                        </center>
+                                        </v:roundrect>
+                                        <![endif]--></div>
+                                    </p>
 
-                                                <p class="oth-listing-dimensions">
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/beds.png"/>&nbsp;10&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/showers.png"/>&nbsp;2&nbsp;&nbsp;
-                                                    <img src="http://poliu2s.github.io/onthehouse/icons/cars.png"/>&nbsp;2
-                                                </p>
-                                                <table class="oth-change-password-table"
-                                                       cellpadding="0" cellspacing="0"
-                                                       border="0" width="100%" align="center">
-                                                    <tr>
-                                                        <td class="oth-change-password-btn"
-                                                            align="center">
-                                                            <img src="http://poliu2s.github.io/onthehouse/view_listing2.png">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    <p>Have a great day!</p>
+
+                                    <p>The Onthehouse Team</p>
                                 </td>
                             </tr>
                         </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="oth-content-panel">
-                        <p>Your information and comments are on their way to <b>Ray White - Maroubra / South Coogee</b>.
-                            If you do
-                            not receive a response within 48 hours, please contact Ray White - Maroubra / South Coogee
-                            directly.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="oth-agent-card">
-                        <table class="oth-agent-card-table" cellspacing="0" border="0" width="100%">
-                            <tr>
-                                <td class="oth-agent-card-left-col">
-                                    <img width="80" src="http://poliu2s.github.io/onthehouse/agent_profile_pic.png"/>
-                                </td>
-                                <td class="oth-agent-card-middle-col">
-                                    <p>
-                                        Jacquelin Patterson<br/>
-                                        <a href="#">Ray White - Marouba / South Coogee</a>
-                                    </p>
 
-                                    <p>
-                                        0422 065 223
-                                    </p>
-                                </td>
-                                <td class="oth-agent-card-right-col">
-                                    <p>Ray White</p>
-                                </td>
-                            </tr>
-                        </table>
-                        <p class="oth-agent-card-mobile">
-                            Sincerely, <br/><br/>
-                            Jacquelin Patterson,
-                            Ray White - Marouba / South Coogee<br/><br/>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="oth-content-panel">
-                        <p>Here are some similar things that you may be interested in:</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="oth-content-panel-center">
-                        <br/>
-
-                        <p>
-                            Don't like this email? You can manage the type of alerts that you want to receive from
-                            us.<br/>
-                            <a href="#">Go to your Alert & Notification settings.</a>
-                        </p>
                     </td>
                 </tr>
             </table>
@@ -617,7 +512,7 @@
                     <td class="oth-email-footer-logo-td">
                         <!-- onthehouse logo -->
                         <a href="http://beta.onthehouse.com.au/"><img
-                                src="http://members.iinet.net.au/~krystlel/marketwatch_assets/onthehouse_on_light_bg@2x.png"
+                                src="http://poliu2s.github.io/onthehouse/logo2x.png"
                                 class="oth-logo" width="163" height="23" alt="onthehouse logo"></a>
                     </td>
                     <td class="oth-email-footer-facebook-logo-td">
@@ -649,7 +544,11 @@
             Policy</a>.
         </td>
     </tr>
-
+    <tr>
+        <td align="center" class="oth-email-footer-preferences">
+            <a href="#" class="oth-fine-print-link">Click here</a> to update your email preferences, or <a href="#" class="oth-fine-print-link">click here</a> to unsubscribe.
+        </td>
+    </tr>
     <tr>
         <td align="center" class="oth-email-footer-copyright">
             &copy; 2014 onthehouse.com.au. <br>121 Kippax St Surry Hills 2011
