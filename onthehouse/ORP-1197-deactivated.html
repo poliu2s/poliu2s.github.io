@@ -124,6 +124,10 @@
             padding-bottom: 10px;
         }
 
+        .oth-p {
+            padding-top: 50px;
+        }
+
         .oth-email-header-inner {
             background: #f3f3f3;
             border-top: 1px solid #e3e2e0;
@@ -209,15 +213,11 @@
             text-align: left;
         }
 
-        .oth-listing-right-col {
-            text-align: center;
-        }
-
-        .oth-listing {
+        .oth-content-card {
             padding: 5px 30px 5px 30px;
         }
 
-        .oth-listing-table {
+        .oth-content-card-table {
             border-bottom: 3px solid #e3e2e0;
             border-top: 1px solid #e3e2e0;
             border-right: 1px solid #e3e2e0;
@@ -226,7 +226,7 @@
             padding-bottom: 0px;
         }
 
-        .oth-view-listing-link {
+        .oth-login-account-link {
             color: #ffffff;
             text-decoration: none;
             background-color: #29c0e2;
@@ -242,17 +242,6 @@
             text-decoration: none;
             width: 80%;
             -webkit-text-size-adjust: none;
-        }
-
-        .oth-listing-img-container {
-            padding: 0px 0px 0px 0px;
-        }
-
-        .oth-content-panel-center {
-            text-align: center;
-            padding-right: 30px;
-            padding-left: 30px;
-
         }
 
         .oth-email-header-title-img-logo {
@@ -306,12 +295,10 @@
             padding-bottom: 10px;
         }
 
-        .oth-listing-address {
-            margin: 5px 0 15px 0;
-        }
-
-        .oth-listing-dimensions {
-            margin: 15px 0 15px 0;
+        .oth-content-title, .oth-content-paragraph {
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            width: 100%;
         }
 
         @media only screen and (max-device-width: 480px) {
@@ -321,14 +308,16 @@
         }
 
         @media only screen and (max-device-width: 480px) {
-            table[class=oth-email-header-mobile] {
-                display: inline-table !important;
-                overflow: visible !important;
-                line-height: 100% !important;
-                max-height: 100% !important;
+            td[class=oth-content-card]{
+                padding-left: 5px !important;
+                padding-right: 5px !important;
                 width: 100% !important;
-                padding-top: 10px !important;
-                padding-bottom: 10px !important;
+            }
+        }
+
+        @media only screen and (max-device-width: 480px) {
+            td[class=oth-content-title] {
+                width: 100% !important;
             }
         }
 
@@ -365,8 +354,6 @@
             }
 
         }
-
-
 
         @media only screen and (max-device-width: 480px) {
             img[class=oth-logo-desktop] {
@@ -451,9 +438,12 @@
                                              class="oth-logo" width="200" height="36"
                                              alt="onthehouse logo"/>
                                     </a>
+
                                     <h2 class="oth-email-header-text">Account De-activated</h2>
 
                                 </td>
+                            </tr>
+                            <tr>
                                 <td class="oth-email-header-img" cellpadding="25">
                                     <a href="" class="oth-email-header-title-img">
                                         <img width="200" src="http://poliu2s.github.io/onthehouse/westpac.png"/>
@@ -468,28 +458,51 @@
 
             <table class="oth-panel" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
-                    <td class="oth-listing">
-                        <table class="oth-listing-table" cellspacing="0" border="0" width="100%">
+                    <td class="oth-content-card">
+                        <table class="oth-content-card-table" cellspacing="0" border="0" width="100%">
                             <tr>
-                                <td>
+                                <td class="oth-content-title">
                                     <h1>Hello {{consumer.firstName}}</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="oth-content-paragraph">
                                     <p>You have successfully de-activated your account.</p>
-                                    <p>You can login and re-ativate your account at any time. Your username is still {{consumer.username}}.</p>
-                                    <p>
-                                        <div><!--[if mso]>
-                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://beta.onthehouse.com.au/password_reset?uuid=[UUID]&token=[token]" style="height:50px;v-text-anchor:middle;width:170px;font-size:14px;" arcsize="14%" stroke="f" fillcolor="#29c0e2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="oth-content-paragraph">
+                                    <p>You can login and re-ativate your account at any time. Your username is still
+                                        {{consumer.username}}.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="oth-content-paragraph">
+                                    <div><!--[if mso]>
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
+                                                     xmlns:w="urn:schemas-microsoft-com:office:word"
+                                                     href="http://beta.onthehouse.com.au/password_reset?uuid=[UUID]&token=[token]"
+                                                     style="height:50px;v-text-anchor:middle;width:240px;font-size:14px;"
+                                                     arcsize="14%" stroke="f" fillcolor="#29c0e2">
                                             <w:anchorlock/>
                                             <center>
                                         <![endif]-->
-                                        <a href="http://beta.onthehouse.com.au/password_reset?uuid=[UUID]&token=[token]" class="oth-view-listing-link">Login to your account</a>
+                                        <a href="http://beta.onthehouse.com.au/password_reset?uuid=[UUID]&token=[token]"
+                                           class="oth-login-account-link">Login to your account</a>
                                         <!--[if mso]>
                                         </center>
                                         </v:roundrect>
-                                        <![endif]--></div>
-                                    </p>
-
+                                        <![endif]-->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="oth-content-paragraph">
                                     <p>Have a great day!</p>
-
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="oth-content-paragraph">
                                     <p>The Onthehouse Team</p>
                                 </td>
                             </tr>
@@ -513,7 +526,7 @@
                         <!-- onthehouse logo -->
                         <a href="http://beta.onthehouse.com.au/"><img
                                 src="http://poliu2s.github.io/onthehouse/logo2x.png"
-                                class="oth-logo" width="163" height="23" alt="onthehouse logo"></a>
+                                class="oth-logo" width="200" height="36" alt="onthehouse logo"></a>
                     </td>
                     <td class="oth-email-footer-facebook-logo-td">
                         <!-- Facebook logo -->
@@ -546,7 +559,8 @@
     </tr>
     <tr>
         <td align="center" class="oth-email-footer-preferences">
-            <a href="http://beta.onthehouse.com.au/members/alerts" class="oth-fine-print-link">Click here</a> to update your email preferences, or <a href="#" class="oth-fine-print-link">click here</a> to unsubscribe.
+            <a href="http://beta.onthehouse.com.au/members/alerts" class="oth-fine-print-link">Click here</a> to update
+            your email preferences, or <a href="#" class="oth-fine-print-link">click here</a> to unsubscribe.
         </td>
     </tr>
     <tr>
